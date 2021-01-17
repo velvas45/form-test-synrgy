@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0E273C;
+}
+
+.title{
+    color: #E8D7F1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.title > h1 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.form__photo {
+    position: relative;
+    margin-left: 30px;    
+}
+
+.form__photo p {
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.form__photo .imgBx{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    color: #000;
+    background: #fff;
+    border-radius: 22px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.form__photo .imgBx:hover{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    background: #A167A5;
+    color: #f6ecf0;
+}
+
+.form__photo > form > input[type='file']{
+    display: none;
+}
+
+.form__box {
+    display: flex;
+    justify-content: center;
+    align-items: centercenter;
+}
+
+.form__box .form__table {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.form__box .form__table section {
+    margin:0 20px;
+}
+
+.form__box .form__table thead tr th,
+.form__box .form__table tbody tr td {
+    padding: 10px;
+}
+
+.form__box .form__table tbody tr td {
+    color: #D3BCCC;
+}
+
+/* D3BCCC */
+
+.form__box .form__table thead tr th{
+    font-size: 20px;
+    color: #E8D7F1;
+}
+
+.form__box .form__table input[type='text'],
+.form__box .form__table input[type='date'],
+.form__box .form__table input[type='number'],
+.form__box .form__table select,
+.form__box .form__table input[type='submit']{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.form__box .form__table textarea {
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.form__box .form__table input[type='text']:focus,
+.form__box .form__table input[type='date']:focus,
+.form__box .form__table input[type='number']:focus,
+.form__box .form__table select:focus,
+.form__box .form__table textarea:focus{
+    outline: none;
+    background: #D3BCCC;
+    border-radius: 7px;
+}
+
+.form__box .form__table input[type='submit']{
+    transition: all 0.2s;
+}
+
+.form__box .form__table input[type='submit']:focus {
+    outline: none;
+}
+
+.form__box .form__table input[type='submit']:hover {
+    background: #4A306D;
+    color: #fff;
+}

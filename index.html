@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Formulir Pendaftaran</h1>
+      
+      <div class="form__photo">
+          <form>
+              <label for="fileImages">
+                <div class="imgBx">
+                  <p>Pas Photo</p>
+                  <p>2 x 3</p>
+                </div>
+              </label>
+              <input type="file" id="fileImages">
+          </form>
+      </div>
+    </div>
+
+    <div class="form__box">
+      <form>
+        <div class="form__table">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">I. KETERANGAN PRIBADI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="nama"
+                    class="nama"
+                    placeholder="Masukkan nama lengkap"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>
+                  <label for="namaPanggilan"> Nama Panggilan </label>
+                </td>
+                <td>
+                  <input type="text" name="namaPanggilan" id="namaPanggilan" />
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>
+                  <label for="jenisKelamin"> Jenis Kelamin </label>
+                </td>
+                <td>
+                  <select name="jenisKelamin" id="jenisKelamin">
+                    <option value="pria">laki-laki</option>
+                    <option value="perempuan">perempuan</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td><label for="tempatLahir">Tempat Lahir</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="tempatLahir"
+                    placeholder="Tempat Lahir"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td><label for="tanggalLahir"> Tanggal Lahir </label></td>
+                <td>
+                  <input type="date" name="tanggalLahir" id="tanggalLahir" />
+                </td>
+              </tr>
+              <tr>
+                <td>06</td>
+                <td><label for="agama">Agama</label></td>
+                <td>
+                  <select name="agama" id="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="budha">Budha</option>
+                    <option value="hindu">Hindu</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>07</td>
+                <td><label for="kewarganegaraan"> Kewarganegaraan </label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="kewarganegaraan"
+                    id="kewarganegaraan"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>08</td>
+                <td><label>Anak Ke</label></td>
+                <td><input type="number" min="0" /></td>
+              </tr>
+              <tr>
+                <td>09</td>
+                <td><label>Jumlah Saudara</label></td>
+                <td>
+                  <input
+                    type="number"
+                    name="jumlahSaudara"
+                    id="jumlahSaudara"
+                    min="0"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>
+                  <label>Status</label>
+                </td>
+                <td>
+                  <select name="status" id="status">
+                    <option value="kawin">kawin</option>
+                    <option value="belumKawin">Belum kawin</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>
+                  <label>Jenis SIM</label>
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3">
+                  <input type="submit" value="Submit" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">II. KETERANGAN TEMPAT TINGGAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>
+                  <label>Alamat Lengkap</label>
+                </td>
+                <td>
+                  <textarea
+                    name="alamatLengkap"
+                    id="alamatLengkap"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td><label>No. KTP</label></td>
+                <td>
+                  <input type="text" name="numberKTP" />
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td><label>No.telp / HP</label></td>
+                <td>
+                  <input type="text" name="numberHp" id="numberHp" />
+                </td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td><label>Alamat lain yang dapat dihubungi</label></td>
+                <td>
+                  <textarea
+                    name="anotherAddress"
+                    id="anotherAddress"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>No. Tlp / HP lain</td>
+                <td>
+                  <input type="text" name="anotherNumberHP" />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="2">
+                  <input type="submit" value="submit" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
